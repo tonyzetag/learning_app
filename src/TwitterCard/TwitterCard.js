@@ -1,4 +1,6 @@
-export default function TwitterCard({ name, username }) {
+import Button from "./Button";
+
+export default function TwitterCard({ name, username = "default"}) {
 
     const formatImageUrl = (username) => {
       return `https://unavatar.io/twitter/${username}`;
@@ -17,7 +19,7 @@ export default function TwitterCard({ name, username }) {
           </div>
         </header>
         <aside>
-          <button>Seguir</button>
+          <Button />
         </aside>
       </article>
     );
